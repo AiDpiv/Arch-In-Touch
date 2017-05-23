@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio - Arch In Touch</title>
+    <%= csrf_meta_tags %>
+
+    <link rel="stylesheet" href="responsiveslides.css">
+    <link rel="stylesheet" href="slider_style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="responsiveslides.min.js"></script>
+    <script>
+      // You can also use "$(window).load(function() {"
+      $(function () {
+        $("#slider2").responsiveSlides({
+          auto: false,
+          pager: true,
+          nav: true,
+          speed: 500,
+          maxwidth: 800,
+          namespace: "transparent-btns"
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+          <div class="showlogo">            
+            <%= link_to "/" do %>
+            <%= image_tag('mainlogo.png') %>
+            <% end %>
+          </div>
+          <!-- <img src="mainlogo.png" alt="" width="204px" height="184px"> -->
+          <div class="rslides_container">
+            <ul class="rslides" id="slider2">
+              <li><%= image_tag "1.jpg", alt: "1"%></li>
+              <li><%= image_tag "2.jpg", alt: "2"%></li>
+              <li><%= image_tag "3.jpg", alt: "3"%></li>
+            </ul>
+          </div>
+        </div>
+        <div class="clear">
+      </div>
+        <div class="text-wrapper">
+          <div class="text-wrapper-left">
+          <span>Name: <%= @project.name %></span></br>
+          <span>Location: <%= @project.location %></span></br>
+          <span>Size: <%= @project.location %> м<sup>2</sup></span></br>
+          <span>Year: <%= @project.location %></span></br>
+          <span>Status: <%= @project.location %></span>
+          </div>
+          <p class="text-description">
+            <%= @project.description %>
+          </p>
+        </div>
+  </body>
+</html>
