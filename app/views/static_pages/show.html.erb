@@ -64,5 +64,10 @@
         <a class="follow-fb" href="https://www.facebook.com/sharer.php?u=http://archintouch.com"><%= image_tag("Facebook.png", class:"follow") %></a>
         <a class= "follow-i"href="https://www.instagram.com/archintouch/"><%= image_tag("instagram.png", class:"follow") %></a>
 
-<%= @project.url %>
-        <!-- <%= image_tag(@projects.photo_url.first) %> -->
+
+<%= Help_me_plz %>
+<!-- Подскажи как вставить картинки
+Текущего проекта метода show  первую картинку, каждую картинку
+Как вставить картинкb метода home первую картинку каждого проекта
+http://www.rubydoc.info/gems/carrierwave/frames  -->
+        <%= image_tag(@project.pictures.first) %>
