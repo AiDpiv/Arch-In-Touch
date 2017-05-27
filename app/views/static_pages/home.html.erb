@@ -3,6 +3,7 @@
 <% provide(:title, 'Arch In Touch') %>
 
 
+
     <section id="main">
         <div class="mainlogo"><img src="mainlogo.png" alt="" width="204px" height="184px"></div>
         <div class="menu">
@@ -60,62 +61,15 @@
       </div><div class="clear"></div>
       <div class="projects">
 
-          <div class="project">
-            <div class="picture">
-              <img src="picture.png" alt="" height="100%" width="100%">
-            </div>
-            <p class="projects-text">Office building</p>
-            <p class="projects-text">Ukraine, Brovary</p>
-          </div>
-          <div class="project">
-            <div class="picture">
-                <img src="picture.png" alt="" height="100%" width="100%">
-            </div>
-            <p class="projects-text">Office building</p>
-            <p class="projects-text">Ukraine, Brovary</p>
-          </div>
-          <div class="project">
-            <div class="picture">
-                <img src="picture.png" alt="" height="100%" width="100%">
-            </div>
-            <p class="projects-text">Office building</p>
-            <p class="projects-text">Ukraine, Brovary</p>
-          </div>
-          <div class="project">
-            <div class="picture">
-                <img src="picture.png" alt="" height="100%" width="100%">
-            </div>
-            <p class="projects-text">Office building</p>
-            <p class="projects-text">Ukraine, Brovary</p>
-          </div>
-          <div class="project">
-            <div class="picture">
-              <img src="picture.png" alt="" height="100%" width="100%">
-            </div>
-            <p class="projects-text">Office building</p>
-            <p class="projects-text">Ukraine, Brovary</p>
-          </div>
-          <div class="project">
-            <div class="picture">
-                <img src="picture.png" alt="" height="100%" width="100%">
-            </div>
-            <p class="projects-text">Office building</p>
-            <p class="projects-text">Ukraine, Brovary</p>
-          </div>
-          <div class="project">
-            <div class="picture">
-                <img src="picture.png" alt="" height="100%" width="100%">
-            </div>
-            <p class="projects-text">Office building</p>
-            <p class="projects-text">Ukraine, Brovary</p>
-          </div>
-          <div class="project">
-            <div class="picture">
-                <img src="picture.png" alt="" height="100%" width="100%">
-            </div>
-            <p class="projects-text">Office building</p>
-            <p class="projects-text">Ukraine, Brovary</p>
-          </div>
+        <% @projects.each do |i| %>
+        <div class="project">
+          <%=  link_to image_tag("picture.png", height: '100%', width: '100%'), controller: "static_pages", action: "show", id: i %>
+          <!-- <img src="picture.png" alt="" height="100%" width="100%"> -->
+
+          <p class="projects-text"><%= i.name %></p>
+          <p class="projects-text"><%= i.location %></p>
+        </div>
+        <% end %>
 
           </div>
       </div>

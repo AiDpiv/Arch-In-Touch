@@ -3,9 +3,9 @@ class PhotoUploader < CarrierWave::Uploader::Base
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
   # include CarrierWave::MimeTypes
-  # include CarrierWave::MiniMagick
+  include CarrierWave::MiniMagick
 
-  # process resize_to_fill: [300, 300]
+  process resize_to_fill: [700, 500]
   # process :set_content_type
 
   def extension_white_list
@@ -13,7 +13,7 @@ class PhotoUploader < CarrierWave::Uploader::Base
   end
 
   def filename
-    "#{mounted_as}_#{model.token}.#{file.extension}" if original_filename
+    "#{file.extension}" if original_filename
   end
   # Choose what kind of storage to use for this uploader:
   storage :file
