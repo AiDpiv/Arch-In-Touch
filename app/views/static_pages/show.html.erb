@@ -15,20 +15,13 @@
 
     <div class="wrapper">
       <div class="mainlogo-show">
-      <a href="#"><%= image_tag("mainlogo.png", class: "mainlogo-pic", width: '150') %></a>
+      <a href="#"><%=link_to image_tag("mainlogo.png", class: "mainlogo-pic", width: '150'), controller: "static_pages", action: "home" %></a>
       </div>
       <div class="rslides_container">
         <ul class="rslides" id="slider2">
-          <li><%= image_tag("pf01.jpg") %></li>
-          <li><%= image_tag("pf02.jpg") %></li>
-          <li><%= image_tag("pf03.jpg") %></li>
-          <li><%= image_tag("pf04.jpg") %></li>
-          <li><%= image_tag("pf05.jpg") %></li>
-          <li><%= image_tag("pf06.jpg") %></li>
-          <li><%= image_tag("pf07.jpg") %></li>
-          <li><%= image_tag("pf08.jpg") %></li>
-          <li><%= image_tag("pf09.jpg") %></li>
-          <li><%= image_tag("pf10.jpg") %></li>
+          <% @project.pictures.each do |picture| %>
+          <li><%=image_tag(picture.photo)%></li>
+          <% end %>
         </ul>
       </div>
       <div class="text-wrapper">
@@ -56,18 +49,10 @@
       </div>
     </div>
     <div class="menu-show">
-          <div class="menu-item-show"><a href='#who-we-are'>WHO WE ARE</a></div>
-          <div class="menu-item-show"><a href='#portfolio'>PORTFOLIO</a></div>
-          <div class="menu-item-show"><a href='#our-team'>OUR TEAM</a></div>
-          <div class="menu-item-show"><a href='#contacts'>GET IN TOUCH</a></div>
+          <div class="menu-item-show"><a href='<%= root_path %>#who-we-are'>WHO WE ARE</a></div>
+          <div class="menu-item-show"><a href='<%= root_path %>#portfolio'>PORTFOLIO</a></div>
+          <div class="menu-item-show"><a href='<%= root_path %>#our-team'>OUR TEAM</a></div>
+          <div class="menu-item-show"><a href='<%= root_path %>#contacts'>GET IN TOUCH</a></div>
         </div>
         <a class="follow-fb" href="https://www.facebook.com/sharer.php?u=http://archintouch.com"><%= image_tag("Facebook.png", class:"follow") %></a>
         <a class= "follow-i"href="https://www.instagram.com/archintouch/"><%= image_tag("instagram.png", class:"follow") %></a>
-
-
-<%= Help_me_plz %>
-<!-- Подскажи как вставить картинки
-Текущего проекта метода show  первую картинку, каждую картинку
-Как вставить картинкb метода home первую картинку каждого проекта
-http://www.rubydoc.info/gems/carrierwave/frames  -->
-        <%= image_tag(@project.pictures.first) %>

@@ -13,11 +13,16 @@ class PhotoUploader < CarrierWave::Uploader::Base
   end
 
   def filename
-    "#{file.extension}" if original_filename
+    "#{secure_token}.#{file.extension}" if original_filename.present?
   end
   # Choose what kind of storage to use for this uploader:
   storage :file
   # storage :fog
+  protected
+  def secure_token
+    var = :"@#{mounted_as}_secure_token"
+    model.instance_variable_get(var) or model.instance_variable_set(var, SecureRandom.uuid)
+  end
 
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
