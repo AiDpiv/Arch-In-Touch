@@ -26,25 +26,14 @@
       </div>
       <div class="text-wrapper">
         <div class="text-wrapper-left">
-        <p><span>Name:</span> Projec2344444235235t11</br>
-        <span>Location:</span> Project1</br>
-        <span>Size:</span> 1 000 000 м<sup>2</sup></br>
-        <span>Year:</span> 9999</br>
-        <span>Status:</span> Finished</br></p>
+        <p><span>Name:</span> <%= @project.name %></br>
+        <span>Location:</span> <%= @project.location %></br>
+        <span>Size:</span><%= @project.size %> м<sup>2</sup></br>
+        <span>Year:</span><%= @project.year %></br>
+        <span>Status:</span><%= @project.status %></br></p>
         </div>
         <p class="text-description">
-          Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt
-          in culpa qui officia deserunt mollit
-          anim id est laborum.
+          <%= @project.description %>
         </p>
       </div>
     </div>
