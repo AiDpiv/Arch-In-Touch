@@ -19,3 +19,10 @@ end
 
 
 <h1> <%= @project.name %> </h1>
+
+
+<%= link_to "static_pages/#{i.id}" do %>
+<div class="picture">
+  <%= image_tag("picture.png", height: '100%', width: '100%') %>
+</div>
+<% end %>

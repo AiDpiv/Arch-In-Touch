@@ -1,57 +1,68 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Portfolio - Arch In Touch</title>
-    <%= csrf_meta_tags %>
-
-    <link rel="stylesheet" href="responsiveslides.css">
-    <link rel="stylesheet" href="slider_style.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="responsiveslides.min.js"></script>
-    <script>
-      // You can also use "$(window).load(function() {"
-      $(function () {
-        $("#slider2").responsiveSlides({
-          auto: false,
-          pager: true,
-          nav: true,
-          speed: 500,
-          maxwidth: 800,
-          namespace: "transparent-btns"
-        });
+<!--
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="responsiveslides.min.js"></script> -->
+  <script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+      $("#slider2").responsiveSlides({
+        auto: false,
+        pager: true,
+        nav: true,
+        speed: 500,
+        maxwidth: 700,
+        namespace: "transparent-btns"
       });
-    </script>
-  </head>
+    });
+  </script>
+  <% provide(:title, 'Arch In Touch - Portfolio') %>
 
-  <body>
     <div class="wrapper">
-          <div class="showlogo">            
-            <%= link_to "/" do %>
-            <%= image_tag('mainlogo.png') %>
-            <% end %>
-          </div>
-          <!-- <img src="mainlogo.png" alt="" width="204px" height="184px"> -->
-          <div class="rslides_container">
-            <ul class="rslides" id="slider2">
-              <li><%= image_tag "1.jpg", alt: "1"%></li>
-              <li><%= image_tag "2.jpg", alt: "2"%></li>
-              <li><%= image_tag "3.jpg", alt: "3"%></li>
-            </ul>
-          </div>
-        </div>
-        <div class="clear">
+      <div class="mainlogo-show">
+      <a href="#"><%= image_tag("mainlogo.png", class: "mainlogo-pic", width: '150') %></a>
       </div>
-        <div class="text-wrapper">
-          <div class="text-wrapper-left">
-          <span>Name: <%= @project.name %></span></br>
-          <span>Location: <%= @project.location %></span></br>
-          <span>Size: <%= @project.location %> м<sup>2</sup></span></br>
-          <span>Year: <%= @project.location %></span></br>
-          <span>Status: <%= @project.location %></span>
-          </div>
-          <p class="text-description">
-            <%= @project.description %>
-          </p>
+      <div class="rslides_container">
+        <ul class="rslides" id="slider2">
+          <li><%= image_tag("pf01.jpg") %></li>
+          <li><%= image_tag("pf02.jpg") %></li>
+          <li><%= image_tag("pf03.jpg") %></li>
+          <li><%= image_tag("pf04.jpg") %></li>
+          <li><%= image_tag("pf05.jpg") %></li>
+          <li><%= image_tag("pf06.jpg") %></li>
+          <li><%= image_tag("pf07.jpg") %></li>
+          <li><%= image_tag("pf08.jpg") %></li>
+          <li><%= image_tag("pf09.jpg") %></li>
+          <li><%= image_tag("pf10.jpg") %></li>
+        </ul>
+      </div>
+      <div class="text-wrapper">
+        <div class="text-wrapper-left">
+        <p><span>Name:</span> Projec2344444235235t11</br>
+        <span>Location:</span> Project1</br>
+        <span>Size:</span> 1 000 000 м<sup>2</sup></br>
+        <span>Year:</span> 9999</br>
+        <span>Status:</span> Finished</br></p>
         </div>
-  </body>
-</html>
+        <p class="text-description">
+          Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt
+          in culpa qui officia deserunt mollit
+          anim id est laborum.
+        </p>
+      </div>
+    </div>
+    <div class="menu-show">
+          <div class="menu-item-show"><a href='#who-we-are'>WHO WE ARE</a></div>
+          <div class="menu-item-show"><a href='#portfolio'>PORTFOLIO</a></div>
+          <div class="menu-item-show"><a href='#our-team'>OUR TEAM</a></div>
+          <div class="menu-item-show"><a href='#contacts'>GET IN TOUCH</a></div>
+        </div>
+        <a class="follow-fb" href="https://www.facebook.com/sharer.php?u=http://archintouch.com"><%= image_tag("Facebook.png", class:"follow") %></a>
+        <a class= "follow-i"href="https://www.instagram.com/archintouch/"><%= image_tag("instagram.png", class:"follow") %></a>
