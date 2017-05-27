@@ -6,7 +6,7 @@ ActiveAdmin.register Project do
 # has_many :pictures
 
 menu priority: 0
-permit_params :name, :location, :size, :status, :year, :description
+permit_params :name, :location, :size, :status, :year, :description, :id
 sidebar "Project Details", only: [:show, :edit] do
   ul do
     li link_to "Picture",    admin_project_pictures_path(resource)
