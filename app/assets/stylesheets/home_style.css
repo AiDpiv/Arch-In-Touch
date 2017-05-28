@@ -167,7 +167,7 @@ a {
 	}
 }
 #who-we-are {
-	/*min-height: 100vh;*/
+	min-height: 100vh;
 }
 .maintext{
 	text-align: justify;
