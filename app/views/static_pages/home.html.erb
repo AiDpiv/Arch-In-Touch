@@ -5,7 +5,8 @@
 
 
     <section id="main">
-        <div class="mainlogo"><img src="mainlogo.png" alt="" width="204px" height="184px"></div>
+        <div class="mainlogo"><%= image_tag("mainlogo.png", width: '204', height: "184px") %></div>
+
         <div class="menu">
           <div class="menu-item"><a href='#who-we-are'>WHO WE ARE</a></div>
           <div class="menu-item"><a href='#portfolio'>PORTFOLIO</a></div>
@@ -107,7 +108,7 @@
               <p>WE MAKE BETTER PLACES FOR PEOPLE TO BUILD THEIR LIVES</p>
             </div>
             <div class="footer-address">
-                  <img src="footer_logo.png" alt="" class="footer-logo">
+                  <%= image_tag("footer_logo", class: 'footer-logo') %>
 
                   <address class="address flex-row">
                     <div class="address1">
@@ -127,8 +128,8 @@
             </div>
             <div class="footer-contects">
                 <p class="footer-text-4">Follow us</p>
-                <a href="https://www.facebook.com/sharer.php?u=http://archintouch.com"><img src="Facebook.png" alt="" class="follow"></a>
-                <a href="https://www.instagram.com/archintouch/"><img src="instagram.png" alt="" class="follow"></a>
+                <a href="https://www.facebook.com/sharer.php?u=http://archintouch.com"><%= image_tag("Facebook.png", class: "follow") %></a>
+                <a href="https://www.instagram.com/archintouch/"><%= image_tag("instagram.png", class: 'follow') %></a>
             </div>
             <div class="footer-ty">
               <p class="footer-text-5">THANK YOU</p>

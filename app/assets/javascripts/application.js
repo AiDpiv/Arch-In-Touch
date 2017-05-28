@@ -10,6 +10,7 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //= require jquery.min.js
+//= require jquery_ujs
 //= require responsiveslides.min
 //= require rails-ujs
 //= require turbolinks
