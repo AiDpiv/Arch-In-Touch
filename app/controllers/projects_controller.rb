@@ -1,4 +1,4 @@
-class StaticPagesController < ApplicationController
+class ProjectsController < ApplicationController
   def home
     @projects = Project.all
     @uploader = PhotoUploader.new

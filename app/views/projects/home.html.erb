@@ -64,7 +64,7 @@
 
         <% @projects.each do |i| %>
         <div class="project">
-          <%=  link_to image_tag(i.pictures.first.photo, class: "picture"), controller: "static_pages", action: "show", id: i %>
+          <%=  link_to image_tag(i.pictures.first.photo, class: "picture"), controller: "projects", action: "show", id: i %>
           <p class="projects-text"><%= i.name %></p>
           <p class="projects-text"><%= i.location %></p>
         </div>
