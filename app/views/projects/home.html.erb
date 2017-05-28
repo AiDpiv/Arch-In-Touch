@@ -62,11 +62,11 @@
       </div><div class="clear"></div>
       <div class="projects">
 
-        <% @projects.each do |i| %>
+        <% @projects.each do |project| %>
         <div class="project">
-          <%=  link_to image_tag(i.pictures.first.photo, class: "picture"), controller: "projects", action: "show", id: i %>
-          <p class="projects-text"><%= i.name %></p>
-          <p class="projects-text"><%= i.location %></p>
+          <%=  link_to image_tag(project.pictures.first.photo, class: "picture"), controller: "projects", action: "show", id: project %>
+          <p class="projects-text"><%= project.name %></p>
+          <p class="projects-text"><%= project.location %></p>
         </div>
         <% end %>
 
