@@ -5,7 +5,7 @@ class PhotoUploader < CarrierWave::Uploader::Base
   # include CarrierWave::MimeTypes
   include CarrierWave::MiniMagick
 
-  process resize_to_fill: [700, 500]
+  process resize_to_fill: [700, 760]
   # process :set_content_type
 
   def extension_white_list

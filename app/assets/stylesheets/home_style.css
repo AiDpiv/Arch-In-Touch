@@ -212,6 +212,7 @@ a {
 	flex-flow: row wrap;
 	justify-content: flex-start;
 	text-align: center;
+	align-items: flex-end;
 	padding: 50px 7vw;
 }
 .picture {
