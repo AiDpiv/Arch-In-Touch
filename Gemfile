@@ -45,7 +45,7 @@ gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 gem 'capybara', '~> 2.13'
 gem 'selenium-webdriver'
 # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-gem 'web-console', '>= 3.3.0'
+
 gem 'listen', '>= 3.0.5', '< 3.2'
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring'
@@ -58,7 +58,7 @@ gem 'capistrano-rbenv', '~> 2.1'
 gem 'capistrano-maintenance', '~> 1.0', require: false
 gem 'capistrano-newrelic', require: false
 group :development, :test do
-
+  gem 'web-console', '>= 3.3.0'
 end
 
 
