@@ -12,7 +12,7 @@
 /db/*.sqlite3-journal
 
 /public/uploads
-/public/development/*
+/public/development
 
 # Ignore all logfiles and tempfiles.
 /log/*
