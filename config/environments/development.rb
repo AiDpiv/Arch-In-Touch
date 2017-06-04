@@ -52,4 +52,7 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
+  ## Googel analitics. replace this with your tracker code
+  GA.tracker = "UA-100471756-1"
+
 end
