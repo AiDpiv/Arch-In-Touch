@@ -6,21 +6,20 @@
         pager: true,
         nav: true,
         speed: 500,
-        maxwidth: 700,
+        maxwidth: 2200,
         namespace: "transparent-btns"
       });
     });
   </script>
   <% provide(:title, 'Arch In Touch - Portfolio') %>
-
     <div class="wrapper">
       <div class="mainlogo-show">
-      <a href="#"><%= link_to image_tag("mainlogo.png", class: "mainlogo-pic", width: '150'), controller: "projects", action: "index" %></a>
+      <a href="#"><%= link_to image_tag("mainlogo.png", class: "mainlogo-pic"), controller: "projects", action: "index" %></a>
       </div>
       <div class="rslides_container">
         <ul class="rslides" id="slider2">
           <% @project.pictures.each do |picture| %>
-          <li><%=image_tag(picture.photo)%></li>
+          <li><%=image_tag(picture.photo, class: "project_images")%></li>
           <% end %>
         </ul>
       </div>
@@ -36,12 +35,12 @@
           <%= @project.description %>
         </p>
       </div>
+      <div class="menu-show">
+            <div class="menu-item-show"><a href='<%= root_path %>#who-we-are'>WHO WE ARE</a></div>
+            <div class="menu-item-show"><a href='<%= root_path %>#portfolio'>PORTFOLIO</a></div>
+            <div class="menu-item-show"><a href='<%= root_path %>#our-team'>OUR TEAM</a></div>
+            <div class="menu-item-show"><a href='<%= root_path %>#contacts'>GET IN TOUCH</a></div>
+      </div>
+      <a class="follow-fb" href="http://www.facebook.com/archintouch-303109833470480/"><%= image_tag("Facebook.png", class:"follow") %></a>
+      <a class= "follow-i"href="https://www.instagram.com/archintouch/"><%= image_tag("instagram.png", class:"follow") %></a>
     </div>
-    <div class="menu-show">
-          <div class="menu-item-show"><a href='<%= root_path %>#who-we-are'>WHO WE ARE</a></div>
-          <div class="menu-item-show"><a href='<%= root_path %>#portfolio'>PORTFOLIO</a></div>
-          <div class="menu-item-show"><a href='<%= root_path %>#our-team'>OUR TEAM</a></div>
-          <div class="menu-item-show"><a href='<%= root_path %>#contacts'>GET IN TOUCH</a></div>
-        </div>
-        <a class="follow-fb" href="http://www.facebook.com/archintouch-303109833470480/"><%= image_tag("Facebook.png", class:"follow") %></a>
-        <a class= "follow-i"href="https://www.instagram.com/archintouch/"><%= image_tag("instagram.png", class:"follow") %></a>
