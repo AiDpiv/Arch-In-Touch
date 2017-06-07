@@ -200,9 +200,10 @@ font-weight:lighter;
 		display: inline-block;
 		position: absolute;
 	  width: calc(100vw - 50px - 450px);
+		max-width: 1000px;
 		margin: 0;
-		right: 100px;
-		margin-top: 231px;
+		left: 400px;
+		margin-top: 100px;
 	  }
 		.follow-fb{
 			position: absolute;
@@ -231,17 +232,18 @@ font-weight:lighter;
 			align-items: flex-start;
 			justify-content: space-between;
 			height: 100px;
-			padding: 0 380px;
-			width: calc(100% - 760px);
+			padding: 0 350px 0 400px;
+			width: calc(100% - 750px);
 			position:absolute;
 			top: 45px;
 			left: 0;
-			text-align: center;
+			text-align: left;
+			max-width: 1000px;
 		}
 		.menu-item-show {
 			width: 120px;
 			font: 12pt/1 Akrobat-Light, sans-serif;
-			text-align: center;
+			text-align: left;
 		}
 		.text-description{
 			margin-top: 60px;

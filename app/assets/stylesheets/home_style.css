@@ -58,17 +58,17 @@ a {
 	align-items: flex-start;
 	justify-content: space-between;
 	height: 100px;
-	padding: 0 380px;
-	width: calc(100% - 760px);
+	padding: 0 350px 0 400px;
+	width: calc(100% - 750px);
 	position:absolute;
 	top: 45px;
 	left: 0;
-	text-align: center;
+	text-align: left;
 }
 .menu-item {
 	width: 120px;
 	font: 12pt/1 Akrobat-Light, sans-serif;
-	text-align: center;
+	text-align: left;
 }
 @media (max-width: 1085px) {
 	#main {
