@@ -182,6 +182,9 @@ font-weight:lighter;
 }
 
 @media (min-width: 1085px) {
+	.div-footer-show {
+		height: 50px;
+	}
 	.mainlogo-show {
 		padding: 0 0;
 		width: auto;

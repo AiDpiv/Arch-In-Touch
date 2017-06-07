@@ -43,9 +43,9 @@
         <% @projects.each do |project| %>
         <div class="project">
           <% if project.pictures.exists? %>
-          <%=  link_to image_tag(project.pictures.first.photo, class: "picture"), controller: "projects", action: "show", id: project %>
+          <%=  link_to image_tag(project.pictures.first.photo, class: "pf-picture"), controller: "projects", action: "show", id: project %>
             <% else %>
-            <%=  link_to image_tag("blank", class: "picture"), controller: "projects", action: "show", id: project %>
+            <%=  link_to image_tag("blank", class: "pf-picture"), controller: "projects", action: "show", id: project %>
           <% end %>
           <p class="projects-text"><%= project.name %></p>
           <p class="projects-text"><%= project.location %></p>

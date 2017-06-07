@@ -237,8 +237,18 @@ a {
 	text-align: center;
 	padding: 50px 7vw;
 }
-.picture {
+.project {
 	width: 24vw;
+	height: 24vw;
+}
+.pf-picture {
+	/*width: 24vw;*/
+	object-fit: cover;
+	display:block;
+	width:24vw;
+	/*max-width:100%;*/
+	/*height:auto;*/
+	height:100%;
 }
 .project {
 	margin: 5px 2vw;
@@ -254,10 +264,18 @@ a {
 	.projects {
 		padding: 50px 1vw;
 	}
-	.picture {
-		width: 44vw;
+	.pf-picture {
+		/*width: 24vw;*/
+		object-fit: cover;
+		display:block;
+		width:44vw;
+		/*max-width:100%;*/
+		/*height:auto;*/
+		height:100%;
 	}
 	.project {
+		width: 44vw;
+		height: 44vw;
 		margin: 5px 1vw 5px 2vw;
 	}
 	#who-we-are {
