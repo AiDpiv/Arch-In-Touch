@@ -191,6 +191,7 @@ font-weight:lighter;
 		height: auto;
 		width: auto;
 		text-align: center;
+		z-index: 100;
 	}
 	.rslides {
 	  margin: 0;
