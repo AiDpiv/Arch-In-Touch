@@ -36,6 +36,10 @@ gem 'jbuilder', '~> 2.5'
 # my gems
 gem 'devise'
 gem 'activeadmin', github: 'activeadmin'
+gem 'active_admin_editor', github: 'ejholmes/active_admin_editor'
+
+
+
 gem 'carrierwave', '~> 1.0'
 gem 'mini_magick'
 gem 'jquery-rails'
