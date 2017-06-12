@@ -39,22 +39,22 @@
         <div class="section-title-3">PORTFOLIO</div>
       </div><div class="clear"></div>
       <div class="projects">
-
         <% @projects.each do |project| %>
         <div class="project">
-          <% if project.pictures.exists? %>
-          <%=  link_to image_tag(project.pictures.first.photo, class: "pf-picture"), controller: "projects", action: "show", id: project %>
-            <% else %>
-            <%=  link_to image_tag("blank", class: "pf-picture"), controller: "projects", action: "show", id: project %>
-          <% end %>
+          <div class="pf-picture-wraper">
+            <% if project.pictures.exists? %>
+            <%=  link_to image_tag(project.pictures.first.photo, class: "pf-picture"), controller: "projects", action: "show", id: project %>
+              <% else %>
+              <%=  link_to image_tag("blank", class: "pf-picture"), controller: "projects", action: "show", id: project %>
+            <% end %>
+          </div>
           <p class="projects-text"><%= project.name %></p>
           <p class="projects-text"><%= project.location %></p>
         </div>
         <% end %>
 
-          </div>
       </div>
-      </div>
+
     </section>
     <section id="our-team">
       <div class="section-title">
