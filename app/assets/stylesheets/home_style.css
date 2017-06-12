@@ -239,7 +239,7 @@ a {
 }
 .project {
 	width: 24vw;
-	height: calc ( 24vw + 115px );
+	height: calc( 24vw + 115px );
 }
 .pf-picture-wraper {
 	width: 24vw;
@@ -275,7 +275,7 @@ a {
 	}
 	.project {
 		width: 44vw;
-		height: calc (44vw + 50px);
+		height: calc( 44vw + 50px );
 		margin: 5px 1vw 5px 2vw;
 	}
 	.pf-picture-wraper {
