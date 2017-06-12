@@ -238,8 +238,7 @@ a {
 	padding: 50px 7vw;
 }
 .project {
-	width: 24vw;
-	height: calc( 24vw + 115px );
+	margin: 5px 2vw 20px 2vw;
 }
 .pf-picture-wraper {
 	width: 24vw;
@@ -253,9 +252,6 @@ a {
 	/*max-width:100%;*/
 	/*height:auto;*/
 	height:100%;
-}
-.project {
-	margin: 5px 2vw;
 }
 .projects-text {
 	font: 18px/1.2 Akrobat-Light;
@@ -275,8 +271,7 @@ a {
 	}
 	.project {
 		width: 44vw;
-		height: calc( 44vw + 50px );
-		margin: 5px 1vw 5px 2vw;
+		margin: 5px 1vw 20px 2vw;
 	}
 	.pf-picture-wraper {
 		width: 44vw;
