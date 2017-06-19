@@ -1,6 +1,6 @@
 class ProjectsController < ApplicationController
   def index
-    @projects = Project.all
+    @projects = Project.all.order(:projects_order)
     @uploader = PhotoUploader.new
     @abouts = About.all
   end

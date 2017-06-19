@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170528093414) do
+ActiveRecord::Schema.define(version: 20170619152401) do
 
   create_table "abouts", force: :cascade do |t|
     t.string "paragraph"
@@ -63,6 +63,7 @@ ActiveRecord::Schema.define(version: 20170528093414) do
     t.string "size"
     t.string "year"
     t.string "status"
+    t.integer "projects_order"
   end
 
 end
